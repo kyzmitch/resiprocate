@@ -41,3 +41,8 @@ obj.gopt.*
 obj.prof.*
 bin.prof.*
 
+apps/sipdial/MacOS/SIPDialTool.xcodeproj/project.xcworkspace/xcuserdata
+apps/sipdial/MacOS/SIPDialTool.xcodeproj/xcuserdata
+resip/sip.xcodeproj/xcuserdata
+resip/sip.xcodeproj/project.xcworkspace/xcuserdata
+OpenSSL

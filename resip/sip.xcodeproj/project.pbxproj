@@ -226,6 +226,8 @@
 		12BF59390895D5E600F7DD81 /* EncryptionManager.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 12BF59380895D5E600F7DD81 /* EncryptionManager.cxx */; };
 		12BF593C0895D5FF00F7DD81 /* DumDecrypted.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 12BF593A0895D5FF00F7DD81 /* DumDecrypted.cxx */; };
 		12BF59580895D7B800F7DD81 /* CertMessage.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 12BF59570895D7B800F7DD81 /* CertMessage.cxx */; };
+		60DC92F3212C22DF00E6AE0F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC92F2212C22DF00E6AE0F /* libssl.a */; };
+		60DC92F5212C22F400E6AE0F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC92F4212C22F400E6AE0F /* libcrypto.a */; };
 		F80A8D4A12B2CA66002D37E0 /* FdPoll.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F80A8D4812B2CA66002D37E0 /* FdPoll.cxx */; };
 		F80A8D4B12B2CA66002D37E0 /* FdPoll.hxx in Headers */ = {isa = PBXBuildFile; fileRef = F80A8D4912B2CA66002D37E0 /* FdPoll.hxx */; };
 		F8A057C7124D47D700112774 /* TcpConnection.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 124D7916086CC3CE00BCA5A9 /* TcpConnection.cxx */; };
@@ -865,6 +867,10 @@
 		12BF593A0895D5FF00F7DD81 /* DumDecrypted.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = DumDecrypted.cxx; path = dum/DumDecrypted.cxx; sourceTree = "<group>"; };
 		12BF59570895D7B800F7DD81 /* CertMessage.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = CertMessage.cxx; path = dum/CertMessage.cxx; sourceTree = "<group>"; };
 		12F79738086CBA1E00AF4EDF /* libresiprocate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libresiprocate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DC92ED212947C400E6AE0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		60DC92EF21294AA500E6AE0F /* libboringssl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libboringssl.tbd; path = usr/lib/libboringssl.tbd; sourceTree = SDKROOT; };
+		60DC92F2212C22DF00E6AE0F /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../OpenSSL/lib/libssl.a; sourceTree = "<group>"; };
+		60DC92F4212C22F400E6AE0F /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../OpenSSL/lib/libcrypto.a; sourceTree = "<group>"; };
 		D2AAC06F0554671400DB518D /* libares.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libares.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80A8D4812B2CA66002D37E0 /* FdPoll.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FdPoll.cxx; path = ../rutil/FdPoll.cxx; sourceTree = SOURCE_ROOT; };
 		F80A8D4912B2CA66002D37E0 /* FdPoll.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FdPoll.hxx; path = ../rutil/FdPoll.hxx; sourceTree = SOURCE_ROOT; };
@@ -1267,6 +1273,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DC92F5212C22F400E6AE0F /* libcrypto.a in Frameworks */,
+				60DC92F3212C22DF00E6AE0F /* libssl.a in Frameworks */,
 				F8DB1FB80C56D4B000853E27 /* libares.a in Frameworks */,
 				F8DB20730C56D75B00853E27 /* SystemConfiguration.framework in Frameworks */,
 			);
@@ -1306,6 +1314,7 @@
 		0867D691FE84028FC02AAC07 /* sip */ = {
 			isa = PBXGroup;
 			children = (
+				60DC92ED212947C400E6AE0F /* README.md */,
 				F8DB1C890C56B7E200853E27 /* sipdialer */,
 				08FB77ACFE841707C02AAC07 /* ares */,
 				124D79A3086CC64E00BCA5A9 /* dum */,
@@ -1313,6 +1322,7 @@
 				12F7983E086CBBEC00AF4EDF /* resip */,
 				0867D69AFE84028FC02AAC07 /* Libraries */,
 				034768DDFF38A45A11DB9C8B /* Products */,
+				60DC92EE21294AA500E6AE0F /* Frameworks */,
 			);
 			name = sip;
 			sourceTree = "<group>";
@@ -1869,6 +1879,16 @@
 			name = resip;
 			sourceTree = "<group>";
 		};
+		60DC92EE21294AA500E6AE0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60DC92F4212C22F400E6AE0F /* libcrypto.a */,
+				60DC92F2212C22DF00E6AE0F /* libssl.a */,
+				60DC92EF21294AA500E6AE0F /* libboringssl.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8DB1C440C56B50E00853E27 /* rutil */ = {
 			isa = PBXGroup;
 			children = (
@@ -2393,6 +2413,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 12F7971F086CB6D700AF4EDF /* Build configuration list for PBXProject "sip" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -2756,7 +2778,7 @@
 		12F79720086CB6D700AF4EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2765,15 +2787,16 @@
 					"USE_ARES=1",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = macosx10.5;
-				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares";
+				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
 			name = Debug;
 		};
 		12F79721086CB6D700AF4EDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2781,8 +2804,9 @@
 					"USE_ARES=1",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = macosx10.5;
-				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares";
+				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
 			name = Release;
 		};
@@ -2791,6 +2815,7 @@
 			buildSettings = {
 				EXCLUDED_SOURCE_FILE_NAMES = TlsConnection.cxx;
 				PRODUCT_NAME = resiprocate;
+				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
 			name = Debug;
 		};
@@ -2799,6 +2824,7 @@
 			buildSettings = {
 				EXCLUDED_SOURCE_FILE_NAMES = TlsConnection.cxx;
 				PRODUCT_NAME = resiprocate;
+				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
 			name = Release;
 		};
@@ -2835,7 +2861,7 @@
 		F8F4ED62133D351F0000D69D /* SSL-Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2845,8 +2871,9 @@
 					"USE_SSL=1",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = macosx10.5;
-				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares";
+				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
 			name = "SSL-Debug";
 		};
@@ -2863,6 +2890,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = resiprocate;
+				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
 			name = "SSL-Debug";
 		};
@@ -2885,7 +2913,7 @@
 		F8F4ED66133D35220000D69D /* SSL-Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2894,8 +2922,9 @@
 					"USE_SSL=1",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				SDKROOT = macosx10.5;
-				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares";
+				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
 			name = "SSL-Release";
 		};
@@ -2911,6 +2940,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = resiprocate;
+				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
 			name = "SSL-Release";
 		};
