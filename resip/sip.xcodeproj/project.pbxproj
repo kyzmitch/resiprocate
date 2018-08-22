@@ -226,8 +226,8 @@
 		12BF59390895D5E600F7DD81 /* EncryptionManager.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 12BF59380895D5E600F7DD81 /* EncryptionManager.cxx */; };
 		12BF593C0895D5FF00F7DD81 /* DumDecrypted.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 12BF593A0895D5FF00F7DD81 /* DumDecrypted.cxx */; };
 		12BF59580895D7B800F7DD81 /* CertMessage.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 12BF59570895D7B800F7DD81 /* CertMessage.cxx */; };
-		60DC92F3212C22DF00E6AE0F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC92F2212C22DF00E6AE0F /* libssl.a */; };
-		60DC92F5212C22F400E6AE0F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC92F4212C22F400E6AE0F /* libcrypto.a */; };
+		60DC9301212D61C700E6AE0F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC92F4212C22F400E6AE0F /* libcrypto.a */; };
+		60DC9302212D61DD00E6AE0F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DC92F2212C22DF00E6AE0F /* libssl.a */; };
 		F80A8D4A12B2CA66002D37E0 /* FdPoll.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F80A8D4812B2CA66002D37E0 /* FdPoll.cxx */; };
 		F80A8D4B12B2CA66002D37E0 /* FdPoll.hxx in Headers */ = {isa = PBXBuildFile; fileRef = F80A8D4912B2CA66002D37E0 /* FdPoll.hxx */; };
 		F8A057C7124D47D700112774 /* TcpConnection.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 124D7916086CC3CE00BCA5A9 /* TcpConnection.cxx */; };
@@ -1273,8 +1273,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DC92F5212C22F400E6AE0F /* libcrypto.a in Frameworks */,
-				60DC92F3212C22DF00E6AE0F /* libssl.a in Frameworks */,
+				60DC9302212D61DD00E6AE0F /* libssl.a in Frameworks */,
+				60DC9301212D61C700E6AE0F /* libcrypto.a in Frameworks */,
 				F8DB1FB80C56D4B000853E27 /* libares.a in Frameworks */,
 				F8DB20730C56D75B00853E27 /* SystemConfiguration.framework in Frameworks */,
 			);
@@ -2814,6 +2814,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXCLUDED_SOURCE_FILE_NAMES = TlsConnection.cxx;
+				LIBRARY_SEARCH_PATHS = ../openssl/lib;
 				PRODUCT_NAME = resiprocate;
 				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
@@ -2823,6 +2824,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXCLUDED_SOURCE_FILE_NAMES = TlsConnection.cxx;
+				LIBRARY_SEARCH_PATHS = ../openssl/lib;
 				PRODUCT_NAME = resiprocate;
 				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
@@ -2889,6 +2891,7 @@
 		F8F4ED64133D351F0000D69D /* SSL-Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = ../openssl/lib;
 				PRODUCT_NAME = resiprocate;
 				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
@@ -2939,6 +2942,7 @@
 		F8F4ED68133D35220000D69D /* SSL-Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = ../openssl/lib;
 				PRODUCT_NAME = resiprocate;
 				USER_HEADER_SEARCH_PATHS = "../ ../contrib/ares ../openssl/include";
 			};
