@@ -1,4 +1,4 @@
-#  Compilation for iOS
+#  Steps to fix compilation and linker issues for iOS
 
 1. move source files from resiprocate/rutil/dns to resiprocate/contrib/ares
 2. change Base sdk from macOS to iOS latest
