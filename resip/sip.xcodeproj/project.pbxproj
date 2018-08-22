@@ -699,7 +699,7 @@
 		124D78E0086CC3CE00BCA5A9 /* GenericUri.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = GenericUri.cxx; path = stack/GenericUri.cxx; sourceTree = "<group>"; };
 		124D78E1086CC3CE00BCA5A9 /* HeaderFieldValue.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = HeaderFieldValue.cxx; path = stack/HeaderFieldValue.cxx; sourceTree = "<group>"; };
 		124D78E2086CC3CE00BCA5A9 /* HeaderFieldValueList.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = HeaderFieldValueList.cxx; path = stack/HeaderFieldValueList.cxx; sourceTree = "<group>"; };
-		124D78E3086CC3CE00BCA5A9 /* HeaderHash.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = HeaderHash.cxx; path = stack/HeaderHash.cxx; sourceTree = "<group>"; };
+		124D78E3086CC3CE00BCA5A9 /* HeaderHash.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = HeaderHash.cxx; path = stack/gen/HeaderHash.cxx; sourceTree = "<group>"; };
 		124D78E4086CC3CE00BCA5A9 /* Headers.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Headers.cxx; path = stack/Headers.cxx; sourceTree = "<group>"; };
 		124D78E5086CC3CE00BCA5A9 /* HeaderTypes.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = HeaderTypes.cxx; path = stack/HeaderTypes.cxx; sourceTree = "<group>"; };
 		124D78E6086CC3CE00BCA5A9 /* Helper.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Helper.cxx; path = stack/Helper.cxx; sourceTree = "<group>"; };
@@ -712,7 +712,7 @@
 		124D78ED086CC3CE00BCA5A9 /* Message.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Message.cxx; path = stack/Message.cxx; sourceTree = "<group>"; };
 		124D78EE086CC3CE00BCA5A9 /* MessageFilterRule.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MessageFilterRule.cxx; path = stack/MessageFilterRule.cxx; sourceTree = "<group>"; };
 		124D78EF086CC3CE00BCA5A9 /* MessageWaitingContents.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MessageWaitingContents.cxx; path = stack/MessageWaitingContents.cxx; sourceTree = "<group>"; };
-		124D78F0086CC3CE00BCA5A9 /* MethodHash.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MethodHash.cxx; path = stack/MethodHash.cxx; sourceTree = "<group>"; };
+		124D78F0086CC3CE00BCA5A9 /* MethodHash.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MethodHash.cxx; path = stack/gen/MethodHash.cxx; sourceTree = "<group>"; };
 		124D78F1086CC3CE00BCA5A9 /* MethodTypes.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MethodTypes.cxx; path = stack/MethodTypes.cxx; sourceTree = "<group>"; };
 		124D78F2086CC3CE00BCA5A9 /* Mime.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Mime.cxx; path = stack/Mime.cxx; sourceTree = "<group>"; };
 		124D78F3086CC3CE00BCA5A9 /* MsgHeaderScanner.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MsgHeaderScanner.cxx; path = stack/MsgHeaderScanner.cxx; sourceTree = "<group>"; };
@@ -723,7 +723,7 @@
 		124D78F8086CC3CE00BCA5A9 /* NameAddr.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = NameAddr.cxx; path = stack/NameAddr.cxx; sourceTree = "<group>"; };
 		124D78F9086CC3CE00BCA5A9 /* OctetContents.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = OctetContents.cxx; path = stack/OctetContents.cxx; sourceTree = "<group>"; };
 		124D78FA086CC3CE00BCA5A9 /* Parameter.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Parameter.cxx; path = stack/Parameter.cxx; sourceTree = "<group>"; };
-		124D78FB086CC3CE00BCA5A9 /* ParameterHash.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ParameterHash.cxx; path = stack/ParameterHash.cxx; sourceTree = "<group>"; };
+		124D78FB086CC3CE00BCA5A9 /* ParameterHash.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ParameterHash.cxx; path = stack/gen/ParameterHash.cxx; sourceTree = "<group>"; };
 		124D78FC086CC3CE00BCA5A9 /* ParameterTypes.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ParameterTypes.cxx; path = stack/ParameterTypes.cxx; sourceTree = "<group>"; };
 		124D78FD086CC3CE00BCA5A9 /* ParserCategories.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ParserCategories.cxx; path = stack/ParserCategories.cxx; sourceTree = "<group>"; };
 		124D78FE086CC3CE00BCA5A9 /* ParserCategory.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ParserCategory.cxx; path = stack/ParserCategory.cxx; sourceTree = "<group>"; };
@@ -1193,8 +1193,8 @@
 		F8DB1E8B0C56CE9800853E27 /* Security.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = Security.hxx; path = stack/ssl/Security.hxx; sourceTree = "<group>"; };
 		F8DB1E8C0C56CE9800853E27 /* SecurityAttributes.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = SecurityAttributes.hxx; path = stack/SecurityAttributes.hxx; sourceTree = "<group>"; };
 		F8DB1E8D0C56CE9800853E27 /* SecurityTypes.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = SecurityTypes.hxx; path = stack/SecurityTypes.hxx; sourceTree = "<group>"; };
-		F8DB1E8E0C56CE9800853E27 /* SelectInterruptor.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = SelectInterruptor.cxx; path = stack/SelectInterruptor.cxx; sourceTree = "<group>"; };
-		F8DB1E8F0C56CE9800853E27 /* SelectInterruptor.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = SelectInterruptor.hxx; path = stack/SelectInterruptor.hxx; sourceTree = "<group>"; };
+		F8DB1E8E0C56CE9800853E27 /* SelectInterruptor.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = SelectInterruptor.cxx; path = ../rutil/SelectInterruptor.cxx; sourceTree = "<group>"; };
+		F8DB1E8F0C56CE9800853E27 /* SelectInterruptor.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = SelectInterruptor.hxx; path = ../rutil/SelectInterruptor.hxx; sourceTree = "<group>"; };
 		F8DB1E900C56CE9800853E27 /* SendData.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = SendData.hxx; path = stack/SendData.hxx; sourceTree = "<group>"; };
 		F8DB1E910C56CE9800853E27 /* SERNonceHelper.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = SERNonceHelper.cxx; path = stack/SERNonceHelper.cxx; sourceTree = "<group>"; };
 		F8DB1E920C56CE9800853E27 /* SERNonceHelper.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = SERNonceHelper.hxx; path = stack/SERNonceHelper.hxx; sourceTree = "<group>"; };
@@ -1251,8 +1251,8 @@
 		F8DB1EC50C56CE9800853E27 /* WarningCategory.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = WarningCategory.hxx; path = stack/WarningCategory.hxx; sourceTree = "<group>"; };
 		F8DB1EC80C56CE9800853E27 /* X509Contents.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = X509Contents.cxx; path = stack/X509Contents.cxx; sourceTree = "<group>"; };
 		F8DB1EC90C56CE9800853E27 /* X509Contents.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = X509Contents.hxx; path = stack/X509Contents.hxx; sourceTree = "<group>"; };
-		F8DB1ECA0C56CE9800853E27 /* XMLCursor.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = XMLCursor.cxx; path = stack/XMLCursor.cxx; sourceTree = "<group>"; };
-		F8DB1ECB0C56CE9800853E27 /* XMLCursor.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = XMLCursor.hxx; path = stack/XMLCursor.hxx; sourceTree = "<group>"; };
+		F8DB1ECA0C56CE9800853E27 /* XMLCursor.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = XMLCursor.cxx; path = ../rutil/XMLCursor.cxx; sourceTree = "<group>"; };
+		F8DB1ECB0C56CE9800853E27 /* XMLCursor.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = XMLCursor.hxx; path = ../rutil/XMLCursor.hxx; sourceTree = "<group>"; };
 		F8DB1F790C56CEEC00853E27 /* Stun.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Stun.cxx; path = ../rutil/stun/Stun.cxx; sourceTree = SOURCE_ROOT; };
 		F8DB1F7A0C56CEEC00853E27 /* Stun.hxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.h; name = Stun.hxx; path = ../rutil/stun/Stun.hxx; sourceTree = SOURCE_ROOT; };
 		F8DB1F7B0C56CEEC00853E27 /* Udp.cxx */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Udp.cxx; path = ../rutil/stun/Udp.cxx; sourceTree = SOURCE_ROOT; };
@@ -1782,8 +1782,6 @@
 				124D790A086CC3CE00BCA5A9 /* SecurityAttributes.cxx */,
 				F8DB1E8C0C56CE9800853E27 /* SecurityAttributes.hxx */,
 				F8DB1E8D0C56CE9800853E27 /* SecurityTypes.hxx */,
-				F8DB1E8E0C56CE9800853E27 /* SelectInterruptor.cxx */,
-				F8DB1E8F0C56CE9800853E27 /* SelectInterruptor.hxx */,
 				F8DB1E900C56CE9800853E27 /* SendData.hxx */,
 				F8DB1E910C56CE9800853E27 /* SERNonceHelper.cxx */,
 				F8DB1E920C56CE9800853E27 /* SERNonceHelper.hxx */,
@@ -1892,6 +1890,8 @@
 		F8DB1C440C56B50E00853E27 /* rutil */ = {
 			isa = PBXGroup;
 			children = (
+				F8DB1E8E0C56CE9800853E27 /* SelectInterruptor.cxx */,
+				F8DB1E8F0C56CE9800853E27 /* SelectInterruptor.hxx */,
 				124D7A29086CC69300BCA5A9 /* AbstractFifo.cxx */,
 				F8DB1D920C56CE1500853E27 /* AbstractFifo.hxx */,
 				F8DB1D930C56CE1500853E27 /* AsyncID.hxx */,
